@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="icon" href="Web services.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virat's Web Services</title>
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="Web services.png">
+</head>
+<body>
+    <header>
+        <h1>Virat's Web Services</h1>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>We offer web services from logo making, to website building.</p>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Our company will make webpages and logos for you at a price, contact Virat for more info.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Get in touch with Virat for more information.</p>
+        </section>
+        <section id="webpages made">
+            <h2>here are a list of webpages created for a client.</h2>
+            <p><a href="index.html">Autocklicker and soundboard website.</a>
+            <a href=""> </a>
+            </p>
+        </section>
+    </main>
+</body>
+    <img src="Web services.png">
+    <h1><b>Our logo.</b></h1>
+    <footer>
+        <p>&copy; 2024 Virat's Web Services. All rights reserved.</p>
+    </footer>
+</html>
