@@ -60,6 +60,7 @@ main {
   flex-wrap: wrap;
   max-width: 600px;
 }
+.mySpanClass { font-size:1.2em; }
 
 
 .card {
