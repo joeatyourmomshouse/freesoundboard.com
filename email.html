@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Collector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input[type="email"] {
+            padding: 10px;
+            margin-right: 10px;
+        }
+        input[type="submit"] {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Email Collector</h1>
+    <form id="emailForm">
+        <input type="email" id="emailInput" placeholder="Enter your email" required>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        const emailForm = document.getElementById('emailForm');
+        const emailInput = document.getElementById('emailInput');
+
+        emailForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const email = emailInput.value;
+
+            // Save the email to local storage
+            let emails = JSON.parse(localStorage.getItem('emails')) || [];
+            emails.push(email);
+            localStorage.setItem('emails', JSON.stringify(emails));
+
+            // Redirect to display emails
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>

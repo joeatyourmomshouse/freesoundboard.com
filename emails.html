@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collected Emails</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Collected Emails</h1>
+    <ul id="emailList"></ul>
+    <a href="index.html">Go back</a>
+
+    <script>
+        const emailList = document.getElementById('emailList');
+        const emails = JSON.parse(localStorage.getItem('emails')) || [];
+
+        emails.forEach(email => {
+            const li = document.createElement('li');
+            li.textContent = email;
+            emailList.appendChild(li);
+        });
+    </script>
+</body>
+</html>
