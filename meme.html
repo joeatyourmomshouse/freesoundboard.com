@@ -16,10 +16,10 @@
       <p>5:16 min long.</p>
     </a>
     <section class="grid">
-      <a href="https://media.memesoundeffects.com/2021/01/Wii-Music-Background-Music-Sound-Effect.mp3" class='card'>
+      <button onclick="play_wii_menu()" class='card'>
         <h2>Wii original backround music &rarr;</h2>
         <p>1:26 min long</p>
-      </a>
+      </button>
       <section class="grid">
         <a href="https://media.memesoundeffects.com/2022/03/Erika-German-Song-Sound-Effect.mp3" class='card'>
           <h2>Erica original song&rarr;</h2>
@@ -75,5 +75,11 @@
                       
                       // Display the version number in the span element
                       document.getElementById("version").textContent = versionNumber;
+
+                      var wii_menu = new Audio("https://media.memesoundeffects.com/2021/01/Wii-Music-Background-Music-Sound-Effect.mp3");
+                   
+                      function play_wii_menu() {
+                          wii_menu.play()
+                      }
                   </script>
                     </element>
