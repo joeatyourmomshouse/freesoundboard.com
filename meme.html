@@ -56,9 +56,15 @@
                       <section class="grid">
                         <button onclick="play_you_like_jazz()" class='card'>
                           <h2>ya like jazz? &rarr;</h2>
-                          <p>0:01.</p>
+                          <p>0:01 min long.</p>
                         </button>
                       </section>
+              <section class="grid">
+               <button onclick="play_vineboom()" class="card">
+                 <h2>vineboom &rarr;</h2>
+                 <p>0:05 min long.</p>
+               </button>
+              </section>
                        
           </main>
                   <br>
@@ -89,6 +95,7 @@
                       var gigachad_theme = new Audio("https://media.memesoundeffects.com/2022/06/Gigachad-meme-Sound-effect.mp3");
                       var rickroll = new Audio("./royalty-free-jazz.mp3");
                       var jazz = new Audio("./ya-like-jazz-djlunatique.com_.mp3");
+                      var vineboom = new Audio("./vineboom.mp3");
 
                       function play_wii_menu() {
                           wii_menu.play();
@@ -113,6 +120,9 @@
                       }
                       function play_you_like_jazz() {
                           jazz.play();
+                      }
+                      function play_vineboom() {
+                          vineboom.play();
                       }
                   </script>
                     </element>
