@@ -11,51 +11,68 @@
 <p class="description">Press any of the buttons below to start!&nbsp;&nbsp;&nbsp;(<a href="index.html"><b>&rarr;BACK</b></a>)
   <hr>
   <section class="grid">
-    <a href="https://media.memesoundeffects.com/2022/04/Dream-Speedrun-Music-Sound-Effect.mp3" class='card'>
+    <button onclick="play_dream_speedrun()" class='card'>
       <h2>Dream speedrun &rarr;</h2>
       <p>5:16 min long.</p>
-    </a>
+    </button>
+  </section>
     <section class="grid">
-      <a href="https://media.memesoundeffects.com/2021/01/Wii-Music-Background-Music-Sound-Effect.mp3" class='card'>
+      <button onclick="play_wii_menu()" class='card'>
         <h2>Wii original backround music &rarr;</h2>
         <p>1:26 min long</p>
-      </a>
-      <section class="grid">
-        <a href="https://media.memesoundeffects.com/2022/03/Erika-German-Song-Sound-Effect.mp3" class='card'>
-          <h2>Erica original song&rarr;</h2>
+      </button>
+    </section>
+     <section class="grid">
+        <button onclick="play_erika()" class='card'>
+          <h2>Erika original song &rarr;</h2>
           <p>2:58 min long</p>
-        </a>
+        </button>
+      </section>
           <section class="grid">
-            <a href="https://media.memesoundeffects.com/2021/12/Emotional-Damage-Sound-Effect.mp3" class='card'>
+            <button onclick="play_emotional_damage()" class='card'>
               <h2>EMOTIONAL DAMAGE &rarr;</h2>
               <p>0:03 min long</p>
-            </a>
-
+            </button>
+          </section>
             <section class="grid">
-              <a href="This Is Your Last Warning, but sadder (T.Y.L.W. Remix).mp3" class='card'>
+              <button onclick="play_tiylw()" class='card'>
                 <h2>scp this is your last warning &rarr;</h2>
                 <p>2:59 min long</p>
-              </a>
-
+              </button>
+            </section>
             <section class="grid">
-              <a href="https://media.memesoundeffects.com/2022/06/Gigachad-meme-Sound-effect.mp3" class='card'>
+              <button onclick="play_gigachad_theme()" class='card'>
                 <h2>Gigachad theme &rarr;</h2>
                 <p>0:28 min long.</p>
-      
-                <a>
+            
+              </button>
+             </section>
                   <section class="grid">
-                    <a href="royalty-free-jazz.mp3" class='card'>
-                      <h2>rickroll&rarr;</h2>
+                    <button onclick="play_rickroll()" class='card'>
+                      <h2>rickroll &rarr;</h2>
                       <p>3:32 min long.</p>
-                    </a>
-
-                    <a>
+                    </button>
+                  </section>
                       <section class="grid">
-                        <a href="ya-like-jazz-djlunatique.com_.mp3" class='card'>
-                          <h2>ya like jazz?&rarr;</h2>
-                          <p>0:01.</p>
-                        </a>
+                        <button onclick="play_you_like_jazz()" class='card'>
+                          <h2>ya like jazz? &rarr;</h2>
+                          <p>0:01 min long.</p>
+                        </button>
+                      </section>
+              <section class="grid">
+               <button onclick="play_vineboom()" class="card">
+                 <h2>vineboom &rarr;</h2>
+                 <p>0:05 min long.</p>
+               </button>
+              </section>
+                       
           </main>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
                   <element id="link bigger">
                     <footer>
                       <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"  ><a property="dct:title" rel="cc:attributionURL" href="https://github.com/joeatyourmomshouse/freesoundboard.com" style="color: green;"><b>soundboard</b></a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/joeatyourmomshouse" style="color: green;"><b>Virat Priya</b></a> is licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a></p>
@@ -69,5 +86,43 @@
                       
                       // Display the version number in the span element
                       document.getElementById("version").textContent = versionNumber;
+
+                      var wii_menu = new Audio("https://media.memesoundeffects.com/2021/01/Wii-Music-Background-Music-Sound-Effect.mp3");
+                      var dream_speedrun = new Audio("https://media.memesoundeffects.com/2022/04/Dream-Speedrun-Music-Sound-Effect.mp3");
+                      var erika = new Audio("https://media.memesoundeffects.com/2022/03/Erika-German-Song-Sound-Effect.mp3");
+                      var emotional_damage = new Audio("https://media.memesoundeffects.com/2021/12/Emotional-Damage-Sound-Effect.mp3");
+                      var tiylw = new Audio("./This Is Your Last Warning, but sadder (T.Y.L.W. Remix).mp3");
+                      var gigachad_theme = new Audio("https://media.memesoundeffects.com/2022/06/Gigachad-meme-Sound-effect.mp3");
+                      var rickroll = new Audio("./royalty-free-jazz.mp3");
+                      var jazz = new Audio("./ya-like-jazz-djlunatique.com_.mp3");
+                      var vineboom = new Audio("./vineboom.mp3");
+
+                      function play_wii_menu() {
+                          wii_menu.play();
+                      }
+                      function play_dream_speedrun() {
+                          dream_speedrun.play();
+                      }
+                      function play_erika() {
+                          erika.play();
+                      }
+                      function play_emotional_damage() {
+                          emotional_damage.play();
+                      }
+                      function play_tiylw() {
+                          tiylw.play();
+                      }
+                      function play_gigachad_theme() {
+                          gigachad_theme.play();
+                      }
+                      function play_rickroll() {
+                          rickroll.play();
+                      }
+                      function play_you_like_jazz() {
+                          jazz.play();
+                      }
+                      function play_vineboom() {
+                          vineboom.play();
+                      }
                   </script>
                     </element>
